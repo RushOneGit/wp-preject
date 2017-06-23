@@ -114,14 +114,14 @@ gulp.task('scss', function() {
 		}))
 		.on('error', gutil.log)
 		.pipe(gcmq())
-		.pipe(gulp.dest('app/css'))
+		.pipe(gulp.dest('app/'))
 		.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('css-deploy', function() {
-	return gulp.src('app/css/main.css')
-		.pipe(concat('main.css'))
-		.pipe(gulp.dest('dist/css'));
+	return gulp.src('app/style.css')
+		.pipe(concat('style.css'))
+		.pipe(gulp.dest('dist/'));
 });
 
 gulp.task('html', function() {
