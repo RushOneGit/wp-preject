@@ -144,7 +144,7 @@ gulp.task('folder-deploy', function() {
 	gulp.src('app/fonts/**/*')
 		.pipe(gulp.dest('dist/fonts'));
 
-	gulp.src('app/video')
+	gulp.src('app/video/**/*')
 		.pipe(gulp.dest('dist/video'));
 });
 
