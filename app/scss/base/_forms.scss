@@ -1,8 +1,8 @@
 form,
 fieldset {
-  margin: 0;
-  padding: 0;
-  border-style: none;
+	margin: 0;
+	padding: 0;
+	border-style: none;
 }
 
 input[type='text'],
@@ -13,21 +13,21 @@ input[type='password'],
 input[type='url'],
 input[type='date'],
 textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  box-sizing: border-box;
-  border: 1px solid $form-element-border-color;
-  transition: all .3s ease;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	border: 1px solid $form-element-border-color;
+	transition: all .3s ease;
 
-  &:focus,
-  &.active {
-    background-color: $white;
-    outline: none;
-  }
+	&:focus,
+	&.active {
+		background-color: $white;
+		outline: none;
+	}
 
-  @include placeholder {
+	@include placeholder {
 
-  }
+	}
 }
 
 input[type='text'],
@@ -37,29 +37,29 @@ input[type='search'],
 input[type='password'],
 input[type='url'],
 input[type='date'] {
-  height: $form-element-height;
-  line-height: $form-element-height;
-  padding: $form-element-padding;
-  width: 100%;
+	height: $form-element-height;
+	line-height: $form-element-height;
+	padding: $form-element-padding;
+	width: 100%;
 }
 
 select {
-  -webkit-border-radius: 0;
+	-webkit-border-radius: 0;
 }
 
 textarea {
-  resize: vertical;
-  vertical-align: top;
-  height: 218px;
-  max-width: 100%;
-  padding: 10px 15px;
-  width: 100%;
+	resize: vertical;
+	vertical-align: top;
+	height: 218px;
+	max-width: 100%;
+	padding: 10px 15px;
+	width: 100%;
 }
 
 input[type=file] {
-  @include media('<phone') {
-    max-width: 100%;
-  }
+	@include media('<phone') {
+		max-width: 100%;
+	}
 }
 
 button,
@@ -69,12 +69,12 @@ input[type='file'],
 input[type='submit'],
 button.btn,
 input.btn {
-  @extend .btn;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  cursor: pointer;
-  height: $form-element-height;
-  line-height: $form-element-height;
-  padding: $form-element-padding;
+	@extend .btn;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+	height: $form-element-height;
+	line-height: $form-element-height;
+	padding: $form-element-padding;
 }
 
