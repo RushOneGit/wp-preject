@@ -15,19 +15,9 @@ input[type='date'],
 textarea {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
-	box-sizing: border-box;
-	border: 1px solid $form-element-border-color;
+	border: 1px solid var(--form-element-border-color);
 	transition: all .3s ease;
-
-	&:focus,
-	&.active {
-		background-color: $white;
-		outline: none;
-	}
-
-	@include placeholder {
-
-	}
+	color: var(--gray-color);
 }
 
 input[type='text'],
@@ -37,10 +27,14 @@ input[type='search'],
 input[type='password'],
 input[type='url'],
 input[type='date'] {
-	height: $form-element-height;
-	line-height: $form-element-height;
-	padding: $form-element-padding;
-	width: 100%;
+	height: var(--form-element-height);
+	line-height: var(--form-element-height);
+	padding: var(--form-element-padding);
+	width: 50%;
+
+	@include media('<tablet') {
+		width: 100%;
+	}
 }
 
 select {
@@ -71,10 +65,19 @@ button.btn,
 input.btn {
 	@extend .btn;
 	-webkit-appearance: none;
-	-webkit-border-radius: 0;
 	cursor: pointer;
-	height: $form-element-height;
-	line-height: $form-element-height;
-	padding: $form-element-padding;
+	height: var(--form-element-height);
+	line-height: var(--form-element-height);
+	padding: var(--form-element-padding);
+	border: 0;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance:textfield;
+}

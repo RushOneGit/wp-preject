@@ -25,24 +25,24 @@
 }
 
 // justify nav
-%justify {
-	text-align: justify; 
-	font-size: 1px;
-	line-height: 0px;
-	> * {
-	display: inline-block;
-	vertical-align: top;
-	text-align: left;
-	font-size: $font-size-base;
-	line-height: $line-height-base;
-	}
-	&:after { 
-	content: '';
-	width: 100%;
-	display: inline-block;
-	vertical-align: top;
-	}
-}
+// %justify {
+// 	text-align: justify; 
+// 	font-size: 1px;
+// 	line-height: 0px;
+// 	> * {
+// 	display: inline-block;
+// 	vertical-align: top;
+// 	text-align: left;
+// 	font-size: $font-size-base;
+// 	line-height: $line-height-base;
+// 	}
+// 	&:after { 
+// 	content: '';
+// 	width: 100%;
+// 	display: inline-block;
+// 	vertical-align: top;
+// 	}
+// }
 
 /// * Helper class to truncate and add ellipsis to a string too long for it to fit
 /// * on a single line.
@@ -56,7 +56,7 @@
 }
 
 .container {
-	max-width: $width;
+	max-width: var(--width);
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
@@ -64,17 +64,17 @@
 }
 
 .btn {
-	color: $btn-color;
-	background-color: $btn-background;
-	padding: $btn-padding;
+	color: var(--btn-color);
+	background-color: var(--btn-background);
+	padding: var(--btn-padding);
 	display: inline-block;
 	transition: all .3s ease;
 	text-decoration: none;
 	text-align: center;
-	border: none;
+	border: var(--btn-border);
+	text-transform: uppercase;
 
 	&:hover {
-		background-color: lighten($btn-background, 20%);
 		text-decoration: none;
 	}
 }

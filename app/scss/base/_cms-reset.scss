@@ -1,28 +1,28 @@
 ul, ol, dl, p, h1, h2, h3, h4, h5, h6, address, form, table, blockquote, applet, embed, object, iframe, frameset {
-  margin:0 0 $vertical-rhythm;
+  margin:0 0 var(--vertical-rhythm);
 }
 
 blockquote {
-  border-left: 4px solid $gray;
+  border-left: 4px solid var(--gray-color);
   padding-left: .5em;
-  margin-left: $vertical-rhythm; 
+  margin-left: var(--vertical-rhythm);
 }
 
 
 th, td {
-  border: 1px solid $gray;
-  padding: .5em;
+  border: 0;
+  padding: 0;
   text-align: left;
-  vertical-align: top;
-}
-
-th{
-  text-align: center;
   vertical-align: middle;
 }
 
+// th{
+  // text-align: center;
+  // vertical-align: middle;
+// }
+
 ul, ol{ 
-  padding-left:3em; 
+  padding-left:3em;
 }
 ul ul,
 ul ol,

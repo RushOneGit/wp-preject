@@ -1,19 +1,724 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-		<meta name="format-detection" content="telephone=no">
-		<title>Home</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div class="wrapper">
-			<header class="header"></header>
-			<main class="main"></main>
-			<footer class="footer"></footer>
-		</div>
-		<script src="js/jquery-2.2.4.min.js"></script>
-		<script src="js/jquery.main.js"></script>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>Home</title>
+	<link rel='stylesheet' id='woocommerce-layout-css' href='http://builtwith.care/css/woocommerce/woocommerce-layout.css' type='text/css'
+	 media='all' />
+	<link rel='stylesheet' id='woocommerce-smallscreen-css' href='http://builtwith.care/css/woocommerce/woocommerce-smallscreen.css'
+	 type='text/css' media='only screen and (max-width: 768px)' />
+	<link rel='stylesheet' id='woocommerce-general-css' href='http://builtwith.care/css/woocommerce/woocommerce.css' type='text/css'
+	 media='all' />
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="woocommerce">
+	<div class="wrapper">
+		<header class="main-header">
+			<div class="container">
+				<div class="top-header">
+					<div class="col-left">
+						<ul class="header-list">
+							<li>
+								<a href="#">Free Shipping On Orders $99+</a>
+							</li>
+							<li>
+								<a href="#">Free T-Shirt On Orders $75+</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-right">
+						<ul class="user-control">
+							<li>
+								<a href="#">My Account</a>
+							</li>
+							<li>
+								<a href="#">My Wishlist</a>
+							</li>
+							<li>
+								<a href="#">Log In</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="col-left">
+						<a href="#" class="logo">
+							
+						</a>
+					</div>
+					<div class="col-center">
+						<nav class="main-menu">
+							<ul id="nav">
+								<li class="current-menu-item ">
+									<a href="#">Home</a>
+									<div class="drop">
+										<ul>
+											<li>
+												<a href="#">item-1</a>
+											</li>
+											<li>
+												<a href="#">item-2</a>
+											</li>
+											<li class="item-has-drop">
+												<a href="#">item-3</a>
+												<div class="drop">
+													<ul>
+														<li>
+															<a href="#">item-1-1</a>
+														</li>
+														<li class="item-has-drop">
+															<a href="#">item-1-2</a>
+															<div class="drop">
+																<ul>
+																	<li>
+																		<a href="#">item-2-1</a>
+																	</li>
+																	<li>
+																		<a href="#">item-2-2</a>
+																	</li>
+																	<li>
+																		<a href="#">item-2-3</a>
+																	</li>
+																	<li>
+																		<a href="#">item-2-4</a>
+																	</li>
+																</ul>
+															</div>
+														</li>
+														<li>
+															<a href="#">item-1-3</a>
+														</li>
+														<li>
+															<a href="#">item-1-4</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+											<li>
+												<a href="#">item-4</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">Shop</a>
+								</li>
+								<li>
+									<a href="#">About</a>
+								</li>
+								<li>
+									<a href="#">blog</a>
+								</li>
+								<li>
+									<a href="#">Team</a>
+								</li>
+								<li>
+									<a href="#">contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-right">
+						<div class="search-form">
+							<form role="search" method="get" class="woocommerce-product-search" action="#">
+								<input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="Search" name="s" title="Search for:">
+								<input type="submit" value="Search">
+							</form>
+						</div>
+						<div class="cart">
+							<a href="#">
+								<i class="icon-icon-cart"></i>
+								<span class="count">5</span>
+								<span class="price">
+									<span class="woocommerce-Price-amount amount">
+										<span class="woocommerce-Price-currencySymbol">$</span>1195.00</span>
+								</span>
+							</a>
+						</div>
+						<div id="toggle" class="button-container">
+							<span class="top"></span>
+							<span class="middle"></span>
+							<span class="bottom"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero-slider-section">
+				<div class="container">
+					<ul class="hero-slider slider">
+						<li>
+							<div class="hero-slider-text">
+								<h2>
+									<span>-30% off</span>
+									Lorem ipsum dolor sit</h2>
+								<p>In feugiat molestie tortor a malesuada. Etiam a venenatis ipsum. Proin pharetra elit at feugiat commodo vel placerat
+									tincidunt sapien nec</p>
+								<a href="#" class="btn">Shop now</a>
+							</div>
+							<div class="hero-slider-img">
+								
+							</div>
+						</li>
+						<li>
+							<div class="hero-slider-text">
+								<h2>
+									<span>-30% off</span>
+									Lorem ipsum dolor sit</h2>
+								<p>In feugiat molestie tortor a malesuada. Etiam a venenatis ipsum. Proin pharetra elit at feugiat commodo vel placerat
+									tincidunt sapien nec</p>
+								<a href="#" class="btn">Shop now</a>
+							</div>
+							<div class="hero-slider-img">
+								
+							</div>
+						</li>
+						<li>
+							<div class="hero-slider-text">
+								<h2>
+									<span>-30% off</span>
+									Lorem ipsum dolor sit</h2>
+								<p>In feugiat molestie tortor a malesuada. Etiam a venenatis ipsum. Proin pharetra elit at feugiat commodo vel placerat
+									tincidunt sapien nec</p>
+								<a href="#" class="btn">Shop now</a>
+							</div>
+							<div class="hero-slider-img">
+								
+							</div>
+						</li>
+						<li>
+							<div class="hero-slider-text">
+								<h2>
+									<span>-30% off</span>
+									Lorem ipsum dolor sit</h2>
+								<p>In feugiat molestie tortor a malesuada. Etiam a venenatis ipsum. Proin pharetra elit at feugiat commodo vel placerat
+									tincidunt sapien nec</p>
+								<a href="#" class="btn">Shop now</a>
+							</div>
+							<div class="hero-slider-img">
+								
+							</div>
+						</li>
+						<li>
+							<div class="hero-slider-text">
+								<h2>
+									<span>-30% off</span>
+									Lorem ipsum dolor sit</h2>
+								<p>In feugiat molestie tortor a malesuada. Etiam a venenatis ipsum. Proin pharetra elit at feugiat commodo vel placerat
+									tincidunt sapien nec</p>
+								<a href="#" class="btn">Shop now</a>
+							</div>
+							<div class="hero-slider-img">
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="bar-form-section bg-cyan">
+				<div class="container">
+					<div class="col-left">
+						<h2>Get 10% off your order!</h2>
+					</div>
+					<div class="col-right">
+						<div role="form" class="wpcf7 bar-form" id="wpcf7-f1567-p704-o1" lang="en-US" dir="ltr">
+							<div class="screen-reader-response"></div>
+							<form action="/wordpress/contact-us/#wpcf7-f1567-p704-o1" method="post" class="wpcf7-form" enctype="multipart/form-data"
+							 novalidate="novalidate">
+								<p>
+									<span class="wpcf7-form-control-wrap your-email">
+										<input type="email" name="your-email" class="wpcf7-form-control wpcf7-text wpcf7-email" placeholder="enter email" aria-required="true"
+										 aria-invalid="false" />
+									</span>
+								</p>
+								<p>
+									<input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+								</p>
+							</form>
+							<div class="wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ok" role="alert">Your message was sent successfully. Thanks.</div>
+							<div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" role="alert">Validation errors occurred. Please confirm the fields and submit it again.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="products featured-section">
+				<div class="container">
+					<div class="row-title">
+						<h1>Featured products</h1>
+					</div>
+					<ul class="products products-slider slider">
+						<li class="post product type-product status-publish">
+							<a href="#" class="woocommerce-LoopProduct-link">
+								
+								<div class="wrap-title">
+									<h6>Fat burners</h6>
+									<div class="star-rating" title="Rated 4.67 out of 5">
+										<span style="width: 100%">
+											<strong class="rating">4.67</strong>
+											out of 5
+										</span>
+									</div>
+								</div>
+								<h3>2 shredded</h3>
+								<p>The unique 2 Shredded formula works on five different levels. It stimulates the thyroid, speeds up</p>
+							</a>
+							<div class="wrap-bottom">
+								<span class="price">
+									<del>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>29.99
+										</span>
+									</del>
+									<ins>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>17.95
+										</span>
+									</ins>
+								</span>
+								<a rel="nofollow" href="#" data-quantity="1" data-product_id="22" data-product_sku="" class="button product_type_variable add_to_cart_button">Choose options</a>
+							</div>
+						</li>
+						<li class="post product type-product status-publish">
+							<a href="#" class="woocommerce-LoopProduct-link">
+								
+								<div class="wrap-title">
+									<h6>Pre workouts</h6>
+								</div>
+								<h3>360pre</h3>
+								<p>Fuels Increased Endurance and Workout Intensity Boosts Muscle Strength, Power and Mental Focus</p>
+							</a>
+							<div class="wrap-bottom">
+								<span class="price">
+									<del>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>59.99
+										</span>
+									</del>
+									<ins>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>27.99
+										</span>
+									</ins>
+								</span>
+								<a rel="nofollow" href="#" data-quantity="1" data-product_id="50" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+							</div>
+						</li>
+						<li class="post product type-product status-publish">
+							<a href="#" class="woocommerce-LoopProduct-link">
+
+								<div class="wrap-title">
+									<h6>Post workouts</h6>
+								</div>
+								<h3>2:1:1 Recovery</h3>
+								<p>2:1:1 Recovery blends complementary ratios of carbohydrates with quality proteins to help optimize</p>
+							</a>
+							<div class="wrap-bottom">
+								<span class="price">
+									<del>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>69.49
+										</span>
+									</del>
+									<ins>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>39.95
+										</span>
+									</ins>
+								</span>
+								<a rel="nofollow" href="#" data-quantity="1" data-product_id="15" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+							</div>
+						</li>
+						<li class="post product type-product status-publish">
+							<a href="#" class="woocommerce-LoopProduct-link">
+					
+								<div class="wrap-title">
+									<h6>Fat burners</h6>
+									<div class="star-rating" title="Rated 4.67 out of 5">
+										<span style="width:93.4%">
+											<strong class="rating">4.67</strong>
+											out of 5
+										</span>
+									</div>
+								</div>
+								<h3>2 shredded</h3>
+								<p>The unique 2 Shredded formula works on five different levels. It stimulates the thyroid, speeds up</p>
+							</a>
+							<div class="wrap-bottom">
+								<span class="price">
+									<del>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>29.99
+										</span>
+									</del>
+									<ins>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>17.95
+										</span>
+									</ins>
+								</span>
+								<a rel="nofollow" href="#" data-quantity="1" data-product_id="22" data-product_sku="" class="button product_type_variable add_to_cart_button">Choose options</a>
+							</div>
+						</li>
+						<li class="post product type-product status-publish">
+							<a href="#" class="woocommerce-LoopProduct-link">
+						
+								<div class="wrap-title">
+									<h6>Pre workouts</h6>
+								</div>
+								<h3>360pre</h3>
+								<p>Fuels Increased Endurance and Workout Intensity Boosts Muscle Strength, Power and Mental Focus</p>
+							</a>
+							<div class="wrap-bottom">
+								<span class="price">
+									<del>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>59.99
+										</span>
+									</del>
+									<ins>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>27.99
+										</span>
+									</ins>
+								</span>
+								<a rel="nofollow" href="#" data-quantity="1" data-product_id="50" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+							</div>
+						</li>
+						<li class="post product type-product status-publish">
+							<a href="#" class="woocommerce-LoopProduct-link">
+				
+								<div class="wrap-title">
+									<h6>Post workouts</h6>
+								</div>
+								<h3>2:1:1 Recovery</h3>
+								<p>2:1:1 Recovery blends complementary ratios of carbohydrates with quality proteins to help optimize</p>
+							</a>
+							<div class="wrap-bottom">
+								<span class="price">
+									<del>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>69.49
+										</span>
+									</del>
+									<ins>
+										<span class="woocommerce-Price-amount amount">
+											<span class="woocommerce-Price-currencySymbol">$</span>39.95
+										</span>
+									</ins>
+								</span>
+								<a rel="nofollow" href="#" data-quantity="1" data-product_id="15" data-product_sku="" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="banner-video-section">
+				<div class="bg-stretch">
+					
+				</div>
+				<div class="container">
+					<div class="video-title">
+						<h2>Industry
+							<br> leading products.
+							<span class="mark">Market low
+								<br>prices.</span>
+						</h2>
+					</div>
+					<a data-fancybox href="https://www.youtube.com/watch?v=Bey4XXJAqS8&amp;autoplay=1&amp;rel=0&amp;showinfo=0" class="play-btn icon-play3 fancybox"></a>
+				</div>
+			</section>
+			<section class="top-brands-section">
+				<div class="container">
+					<div class="col col-left">
+						<h2>Top brands</h2>
+					</div>
+					<div class="col col-middle">
+						<ul class="brands-list">
+							<li>
+							
+							</li>
+							<li>
+							
+							</li>
+							<li>
+							
+							</li>
+							<li>
+							
+							</li>
+							<li>
+							
+							</li>
+							<li>
+							
+							</li>
+						</ul>
+					</div>
+					<div class="col col-right">
+						<a href="#" class="btn">View alL</a>
+					</div>
+				</div>
+			</section>
+			<section class="top-categories-section">
+				<div class="container">
+					<div class="bl-holder">
+						<div class="row-title">
+							<h2>Top Categories</h2>
+						</div>
+						<ul class="list-categories">
+							<li>
+								<a href="#">
+									<h3>Fat Burners</h3>
+									<p>View alL</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h3>Pre-Workouts</h3>
+									<p>View alL</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h3>Prohormones</h3>
+									<p>View alL</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="banner-section">
+				<div class="bg-stretch">
+					
+				</div>
+				<div class="container">
+					<div class="banner-article">
+						<h2>Bio Hacks to Start Your New Year Healthy</h2>
+						<p class="meta">Jan 6, 2018</p>
+						<a href="#" class="btn btn-dark">Read</a>
+					</div>
+				</div>
+			</section>
+			<section class="blog-grid-section">
+				<div class="container">
+					<ul class="preview-blog">
+						<li>
+							<div class="top">
+								<div class="bg-stretch">
+									
+								</div>
+								<h3>The Basics: Branched Chain Amino Acids</h3>
+								<div class="meta text-uppercase">
+									<p>Jan 17, 2018</p>
+								</div>
+							</div>
+							<a href="#" class="btn">Read</a>
+						</li>
+						<li>
+							<div class="top">
+								<div class="bg-stretch">
+									<div class="bg-stretch">
+										
+									</div>
+								</div>
+								<h3>Tips to Stay Healthy over the Holidays</h3>
+								<div class="meta text-uppercase">
+									<p>Dec 27, 2017</p>
+								</div>
+							</div>
+							<a href="#" class="btn">Read</a>
+						</li>
+					</ul>
+					<a href="#" class="see-all btn">Blog</a>
+				</div>
+			</section>
+			<section class="bar-form-section bg-light-gray">
+				<div class="container">
+					<div class="col-left">
+						<h2>Sign up for 10% off & Exclusive content</h2>
+					</div>
+					<div class="col-right">
+						<div role="form" class="wpcf7 bar-form bar-form-light-gray" id="wpcf7-f1567-p704-o12" lang="en-US" dir="ltr">
+							<div class="screen-reader-response"></div>
+							<form action="#" method="post" class="wpcf7-form" enctype="multipart/form-data" novalidate="novalidate">
+								<p>
+									<span class="wpcf7-form-control-wrap your-email">
+										<input type="email" name="your-email" class="wpcf7-form-control wpcf7-text wpcf7-email" placeholder="enter email" aria-required="true"
+										 aria-invalid="false" />
+									</span>
+								</p>
+								<p>
+									<input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit" />
+								</p>
+							</form>
+							<div class="wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ok" role="alert">Your message was sent successfully. Thanks.</div>
+							<div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" role="alert">Validation errors occurred. Please confirm the fields and submit it again.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="helper-items-section">
+				<div class="container">
+					<ul class="helper-items">
+						<li>
+							<div class="helper-items-img">
+								<i class="icon-icon-chipping"></i>
+							</div>
+							<div class="helper-items-text">
+								<h6>free Shipping & Gifts</h6>
+								<p>Free Shipping On Orders $99+
+									<br> Free T-Shirt On Orders $75+ </p>
+								<a href="#" class="btn btn-border">Learn more</a>
+							</div>
+						</li>
+						<li>
+							<div class="helper-items-img">
+								<i class="icon-icon-microphone"></i>
+							</div>
+							<div class="helper-items-text">
+								<h6>customer Service is #1</h6>
+								<p>One of our core values is making sure every customer is satisfied with their order.</p>
+								<a href="#" class="btn btn-border">Contact us</a>
+							</div>
+						</li>
+						<li>
+							<div class="helper-items-img">
+								<i class="icon-icon-check"></i>
+							</div>
+							<div class="helper-items-text">
+								<h6>SSL SEcure Payments</h6>
+								<p>Rest easy knowing your confidential information remains secure.</p>
+								<a href="#" class="btn btn-border">FAQ</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="top-footer">
+					<div class="col-left">
+						<a href="#" class="logo">
+							
+						</a>
+					</div>
+					<div class="col-middle">
+						<div class="footer-links">
+							<ul>
+								<li>
+									<a href="#">home</a>
+								</li>
+								<li>
+									<a href="#">about us</a>
+								</li>
+								<li>
+									<a href="#">Shop</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">Brands</a>
+								</li>
+								<li>
+									<a href="#">Blog</a>
+								</li>
+								<li>
+									<a href="#">contact</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">FAQ</a>
+								</li>
+								<li>
+									<a href="#">Refund Policy</a>
+								</li>
+								<li>
+									<a href="#">login</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">Register</a>
+								</li>
+								<li>
+									<a href="#">My account</a>
+								</li>
+								<li>
+									<a href="#">Testimonials</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-right">
+						<ul class="social-links">
+							<li class="facebook-item">
+								<a target="_blank" href="https://www.facebook.com/BlackDiamondSupplements/">
+									<i class="icon-icon-facebook"></i>
+								</a>
+							</li>
+							<li class="facebook-instagram">
+								<a target="_blank" href="https://www.instagram.com/blackdiamondsupplements/">
+									<i class="icon-icon-instagram"></i>
+								</a>
+							</li>
+							<li class="facebook-twitter">
+								<a target="_blank" href="https://twitter.com/BlackDiSplmnts">
+									<i class="icon-icon-twitter"></i>
+								</a>
+							</li>
+							<li class="facebook-pinterest">
+								<a target="_blank" href="https://www.pinterest.com/blackdiamondsup/">
+									<i class="icon-icon-pinterest"></i>
+								</a>
+							</li>
+							<li class="facebook-youtube">
+								<a target="_blank" href="https://www.youtube.com/user/BlackDiamondSpplmnts">
+									<i class="icon-icon-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom-footer">
+					<div class="col-left">
+						<div class="copyright">
+							<span>© 2018 All rights reserved. Development by</span>
+							<a href="#">Avintiv Media</a>
+						</div>
+					</div>
+					<div class="col-middle">
+						<div class="footer-contact">
+							<a href="tel:1-877-778-4761">1-877-778-4761</a>
+							<address>M - F 10am - 6pm MST</address>
+						</div>
+					</div>
+					<div class="col-right">
+						<ul class="list-payments">
+							<li class="ae">
+							
+							</li>
+							<li class="mc">
+							
+							</li>
+							<li class="vs">
+							
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
 </html>

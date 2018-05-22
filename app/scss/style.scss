@@ -63,7 +63,30 @@ body {
 	flex: 1 1 auto;
 }
 
-html *:last-child {
-	margin-bottom: 0;
+.slider {
+	display: none!important;
+
+	&.slick-initialized {
+		display: block!important;
+	}
 }
 
+// font
+@font-face {
+	font-family: 'Font';
+	src: url('fonts/Font/Font.woff') format('woff'),
+		url('fonts/Font/Font.woff2') format('woff2'),
+		url('fonts/Font/Font.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+.wpcf7-response-output {
+	font-size: 10px;
+	margin-top: 5px;
+	display: none;
+}
+
+iframe {
+	max-width: 100%;
+}

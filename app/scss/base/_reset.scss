@@ -8,10 +8,10 @@ html {
 * {max-height: 1000000px;}
 
 body {
-  color: $base-text-color;
-  background: $base-background-color;
-  font: #{$font-size-base}/#{$line-height-base} $base-font-family;
-  min-width: $base-min-width;
+  color: var(--base-text-color);
+  background: var(--base-background-color);
+	font: var(--font-size-base) / var(--line-height-base) var(--base-font-sans-serif);
+  min-width: var(--base-min-width);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
